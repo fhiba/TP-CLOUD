@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="background-animation" id="backgroundAnimation"></div>
+    
+    <header class="header">
+      <div class="brand">Factutable</div>
+      <button class="login-btn" id="loginBtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+      </button>
+    </header>
+    
+    <main class="main">
+      <div class="upload-container">
+        <div class="upload-area">
+          <svg class="upload-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7,10 12,15 17,10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <h2 class="upload-title">Upload File</h2>
+          <p class="upload-subtitle">Choose a file to upload</p>
+          <input type="file" id="fileInput" class="file-input" />
+          <label for="fileInput" class="upload-btn">Choose File</label>
+        </div>
+      </div>
+    </main>
+    
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
